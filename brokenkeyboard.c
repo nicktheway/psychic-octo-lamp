@@ -3,7 +3,7 @@
  * 	gcc brokenkeyboard.c -trigraphs
  */ 
 ??=include <stdio.h>
-%: include <stdlib.h>
+%:include <stdlib.h>
 
 void multiplyIArrayElements(int size; int array[static size], int size, int number)
 <%
@@ -32,5 +32,5 @@ int main(void)
 	printf("Now the numbers are:\n");
 	printIntArray(numbers, 10);
 
-	return 0;
+	return EXIT_SUCCESS;
 ??>

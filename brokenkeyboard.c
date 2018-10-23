@@ -1,6 +1,6 @@
 /**
  * Compilation command example:
- * 	gcc brokenKeyboard.c -trigraphs
+ * 	gcc brokenkeyboard.c -trigraphs
  */ 
 ??=include <stdio.h>
 %: include <stdlib.h>

@@ -14,7 +14,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_NEEDED_ITERATIONS 380204032  //(26+26)^5
+/**
+ * The number of the possible combinations of 1, 2, 3, 4 and 5 char words.
+ */
+const unsigned long MAX_NEEDED_ITERATIONS = 52 + 52*52 + 52*52*52 + 52*52*52*52 + 52*52*52*52*52;
 
 /**
  * Get the next possible word from the brute force algorithm.
@@ -54,7 +57,7 @@ int main(int argc, char *argv[static argc])
     // Tries all the possible words from 'A' to 'zzzzz'
     // A better implementation would have an up to 5 word database
     // and would try all its words first.
-    for (int i = 0; i < MAX_NEEDED_ITERATIONS; i++)
+    for (unsigned long i = 0; i < MAX_NEEDED_ITERATIONS; i++)
     {
         const char *const oneWord = nextWord();
         const char *const oneHash = crypt(oneWord, salt);

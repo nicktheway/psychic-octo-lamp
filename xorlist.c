@@ -23,7 +23,7 @@
  * 	backwards from the last node as the opposite way nodes do not exist
  * 	so their addresses are 0.
  *	
- *	This program is my solution of the following interview problem (from Google)
+ *	This program is my solution to the following interview problem (from Google)
  *	
  *		An XOR linked list is a more memory efficient double linked list.
  *		Instead of each node holding <next> and <prev> fields, it holds a
@@ -76,7 +76,7 @@ int main(void)
 	assert(getNode(S, 4)->data == 4);
 	
 
-	return 0;
+	return EXIT_SUCCESS;
 }
 
 
